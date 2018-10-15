@@ -1,0 +1,34 @@
+{
+    "config": {
+        "cache-files-ttl": 0,
+        "discard-changes": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": false,
+    "provide": {
+        "heroku-sys\/heroku": "18.2018.10.07"
+    },
+    "require": {
+        "heroku-sys\/php": "^7.0.0",
+        "heroku-sys\/apache": "^2.4.10",
+        "heroku-sys\/nginx": "~1.8.0",
+        "heroku-sys/ext-newrelic": "*"
+    },
+    "require-dev": {},
+    "repositories": [
+        {
+            "packagist": false
+        },
+        {
+            "type": "path",
+            "url": "\/app\/tmp\/buildpacks\/82eb9daa27a4e8aa500f0928a93813005d4f22d402a9388e00a0c060bea9214ffa9a9176f048b9b0f8ec2e694d858c161f487786f4a98109099a3811127a54c5\/support\/installer\/",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "composer",
+            "url": "https:\/\/lang-php.s3.amazonaws.com\/dist-heroku-18-stable\/"
+        }
+    ]
+}
